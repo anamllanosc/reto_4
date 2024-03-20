@@ -1,4 +1,6 @@
 # reto_4
+
+## Class Shape
 ```python
 class Point: #clase punto
     def __init__(self,x,y):
@@ -302,6 +304,7 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+## Restauran Scenario
 ```python
 class MenuItem:
     def __init__(self,name:str,price:int):
