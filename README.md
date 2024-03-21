@@ -334,6 +334,10 @@ class MainCourse(MenuItem): #Clase derivada de MenuItem (Plato principal)
 
     def get_accompainments(self):
         return self.__accompainments
+```
+Se tiene como argumentos privados a cada uno de los argumentos exclusivos de cada clase (temperatura, numero de piezas y acompañamientos), por lo que se utilizan getters para acceder a sus valores a la hora de querer mostrar la orden , para que puedan aparecer cada una de sus caracteristicas.
+
+```python
 
 class Order:
     def __init__(self):
