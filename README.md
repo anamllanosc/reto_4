@@ -304,7 +304,7 @@ def main():
 if __name__ == "__main__":
     main()
 ```
-## Restauran Scenario
+## Restaurant Scenario
 ```python
 class MenuItem:
     def __init__(self,name:str,price:int):
