@@ -425,6 +425,8 @@ class Order:
         print(f"Descuento a aplicar: -{discount}$")
         print(f"TOTAL A PAGAR (Descuento aplicado)=> {final_bill}$")
         self.final_bill=final_bill# Almacena final_bill como un atributo de instancia para poder acceder a el fuera de la clase
+```
+```python
 
 class Payment():
     def __init__(self):
@@ -452,10 +454,10 @@ class Cash(Payment):
 
         else:
             print(f"Fondos insuficientes. Faltan {final_bill-self.cash}")
-        
-
-
-        
+```
+Se añadio la nueva clase payment para que el usuario elija el metodo de pago. Se usa polimorfismo para definir de maneras diferentes el metodo pay en cada subclase que hereda de la clase payment (card y cash).
+```python
+  
     
 #Objetos de la clase Beverages
 coffe=Beverage("Coffe",3000,"Hot")
