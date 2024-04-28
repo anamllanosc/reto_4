@@ -31,6 +31,7 @@ class Shape: #clase figura
         return perimeter
     
     def compute_inner_angles(self):# la suma de los angulos internos 
+        angle_sum=0
         for angle in self.inner_angles:
             angle_sum+=angle
         return angle_sum
@@ -139,9 +140,9 @@ def main():
     point_2 = Point(6,1)
     point_3 = Point(4,6)
     edges = [
-        Line(point_1, point_2, point_1.compute_distance(point_2)),
-        Line(point_1, point_3, point_1.compute_distance(point_3)), 
-        Line(point_2, point_3, point_2.compute_distance(point_3))]
+        Line(point_1, point_2),
+        Line(point_1, point_3), 
+        Line(point_2, point_3)]
     vertices = [point_1, point_2, point_3] 
     triangle_1 = Isosceles(vertices, edges, [50,65,65]) #Se crea un triangulo isosceles
     print(f"Área: {triangle_1.compute_area()},Perimetro: {triangle_1.compute_perimeter()}, Suma de ángulos internos: {triangle_1.compute_inner_angles()}") 
